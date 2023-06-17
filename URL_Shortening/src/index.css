@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  font-family: "Mulish", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.1;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+button,
+input {
+  border-radius: 8px;
+  padding: 0.8em;
+  font-size: 1rem;
+  height: auto;
+  font-weight: 400;
+  background-color: #1a1a1a;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+button:hover,
+input:hover,
+input,
+input:focus,
+input:focus-visible,
+button,
+button:focus,
+button:focus-visible {
+  border: none;
+  outline: none;
+}
+button:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+@media screen and (max-width: 400px) {
+  form {
+    flex-direction: column;
+  }
+  form button {
+    width: 100%;
+  }
+}
